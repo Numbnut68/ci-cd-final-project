@@ -42,10 +42,10 @@ spec:
 
     - name: flake8
       runAfter:
-        - git-clone
+      - git-clone
       taskRef:
         name: flake8
-        kind: ClusterTask
+        kind: Task
       workspaces:
         - name: source
           workspace: output
